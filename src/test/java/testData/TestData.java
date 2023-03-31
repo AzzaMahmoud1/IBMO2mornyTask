@@ -10,7 +10,7 @@ import org.openqa.selenium.By;
 import base.TestBase;
 
 public class TestData extends TestBase{
-	 private static final String EXCEL_FILE_PATH = "path/to/excel/file.xlsx";
+	 private static final String EXCEL_FILE_PATH = System.getProperty("user.dir") + "\\\\src\\\\test\\\\java\\\\TestData\\\\TestData.xlsx";
 	    private static By[] byElements;
 
 	    public static void readExcelFile() throws IOException {
